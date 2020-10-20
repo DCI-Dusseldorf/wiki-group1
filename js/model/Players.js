@@ -1,4 +1,3 @@
-import PlayersView from '../view/PlayersView.js';
 import LS from '../controller/LS.js';
 
 class Players {
@@ -6,13 +5,6 @@ class Players {
     this.playersData = [];
     this.playerObject = {};
     this.data = LS.GET('players');
-  }
-
-  init() {
-    PlayersView.listView();
-    PlayersView.playerView();
-    // this.add();
-    this.edit();
   }
 
   add() {
